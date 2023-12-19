@@ -1,30 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
-    <section>
+    <section class="main-section">
         <div class="container">
             <table class="table">
                 <thead>
                     <tr>
                         <th>Cover</th>
                         <th>Title</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Series</th>
-                        <th>Sale Date</th>
+                        {{-- <th>Series</th> --}}
+                        {{-- <th>Description</th> --}}
                         <th>Type</th>
+                        {{-- <th>Sale Date</th> --}}
+                        <th>Price</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse ($comics as $comic)
                         <tr>
-                            <td><img src="{{ $comic->thumb }}" width="64" alt=""></td>
+                            <td><img src="{{ $comic->thumb }}" width="160" alt=""></td>
                             <td>{{ $comic->title }}</td>
-                            <td>{{ $comic->description }}</td>
-                            <td>{{ $comic->price }}</td>
-                            <td>{{ $comic->series }}</td>
-                            <td>{{ $comic->sale_date }}</td>
-                            <td>{{ $comic->type }}</td>
+                            {{-- <td>{{ $comic->series }}</td> --}}
+                            {{-- <td>{{ $comic->description }}</td> --}}
+                            <td class="text-uppercase">{{ $comic->type }}</td>
+                            {{-- <td>{{ $comic->sale_date }}</td> --}}
+                            <td>${{ $comic->price }}</td>
+                            <td><a class="btn btn-primary" href="{{ route('comics.show', $comic) }}">More Info</a></td>
                         </tr>
                     @empty
                         <tr>
