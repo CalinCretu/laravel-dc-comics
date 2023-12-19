@@ -22,10 +22,10 @@
                 <nav>
                     <ul class="d-flex justify-content-between mt-2">
                         <li>
-                            <a class="btn btn-primary" href="{{ route('home') }}">Home</a>
+                            <a class="btn btn-outline-primary" href="{{ route('home') }}">Home</a>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="{{ route('comics.index') }}">Comics List</a>
+                            <a class="btn btn-outline-primary" href="{{ route('comics.index') }}">Comics List</a>
                         </li>
                     </ul>
                 </nav>

@@ -15,7 +15,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col text-center">
+            <div class="col text-center mx-2">
                 <img src="{{ $comic->thumb }}" width="300" alt="">
             </div>
             <div class="col">

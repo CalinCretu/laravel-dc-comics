@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use App\Http\Requests\StoreComicRequest;
 use App\Http\Requests\UpdateComicRequest;
+use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
@@ -15,10 +16,22 @@ class ComicController extends Controller
         return view('comics.index', compact('comics'));
     }
 
-    public function show($id)
+    public function show(Comic $comic)
     {
-        $comic = Comic::findOrFail($id);
+        // $comic = Comic::findOrFail($id);
 
         return view('comics.show', compact('comic'));
+    }
+
+    public function create()
+    {
+        return view('comics.create');
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->all();
+
+        dd($data);
     }
 }

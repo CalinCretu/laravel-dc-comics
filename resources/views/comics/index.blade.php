@@ -5,7 +5,7 @@
         <div class="container">
             <table class="table">
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th>Cover</th>
                         <th>Title</th>
                         {{-- <th>Series</th> --}}
@@ -13,13 +13,13 @@
                         <th>Type</th>
                         {{-- <th>Sale Date</th> --}}
                         <th>Price</th>
-                        <th></th>
+                        <th><a href="{{ route('comics.create') }}" class="btn btn-success">New Comic</a></th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse ($comics as $comic)
-                        <tr>
-                            <td><img src="{{ $comic->thumb }}" width="160" alt=""></td>
+                        <tr class="text-center">
+                            <td class="text-center"><img src="{{ $comic->thumb }}" height="150" alt=""></td>
                             <td>{{ $comic->title }}</td>
                             {{-- <td>{{ $comic->series }}</td> --}}
                             {{-- <td>{{ $comic->description }}</td> --}}
