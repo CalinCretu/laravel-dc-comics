@@ -31,3 +31,6 @@ Route::get('comics/{comic}', [ComicController::class, 'show'])
 
 Route::post('/comics', [ComicController::class, 'store'])
     ->name('comics.store');
+
+// Route::get('/comics/{character}/edit', [ComicController::class, 'edit'])
+//     ->name('comics.edit');

@@ -23,8 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="sale_date" class="form-label">Sale Date</label>
-                    <input type="text" class="form-control" name="sale_date" id="sale_date"
-                        placeholder="Comic Sale Date">
+                    <input type="text" class="form-control" name="sale_date" id="sale_date" placeholder="yyyy-mm-dd">
                 </div>
                 <div class="mb-3">
                     <label for="type" class="form-label">Type</label>
