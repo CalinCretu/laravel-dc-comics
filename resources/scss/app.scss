@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+.header-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+}
+
 ul,
 ol,
 menu {
@@ -22,4 +26,8 @@ a {
     padding: 0;
     box-shadow: 0px 0px 10px black;
   }
+}
+
+.btn {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
 }

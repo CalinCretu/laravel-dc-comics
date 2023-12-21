@@ -17,20 +17,22 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <nav>
-                    <ul class="d-flex justify-content-between mt-2">
-                        <li>
-                            <a class="btn btn-outline-primary" href="{{ route('home') }}">Home</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-outline-primary" href="{{ route('comics.index') }}">Comics List</a>
-                        </li>
-                    </ul>
-                </nav>
+        <section class="header-border">
+            <div class="container">
+                <div class="row">
+                    <nav>
+                        <ul class="d-flex justify-content-between mt-2">
+                            <li>
+                                <a class="btn btn-outline-primary" href="{{ route('home') }}">Home</a>
+                            </li>
+                            <li>
+                                <a class="btn btn-outline-primary" href="{{ route('comics.index') }}">Comics List</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </section>
     </header>
 
     <main class="bg-light">
