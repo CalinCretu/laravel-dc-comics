@@ -41,4 +41,17 @@ class ComicController extends Controller
   {
     return view('comics.edit', compact('comic'));
   }
+
+  public function update(Request $request, Comic $comic)
+  {
+    $data = $request->all();
+    $comic->update($data);
+    return redirect()->route('comics.show', $comic);
+  }
+
+  public function destroy(Comic $comic)
+  {
+    $comic->delete();
+    return redirect()->route('comics.index');
+  }
 }
